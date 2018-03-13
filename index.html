@@ -27,7 +27,11 @@
 
 			<ul class="user-navigation">
 				<li>
-					<!-- Форма поиска -->
+					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+						<label for="search" class="visually-hidden">Поиск</label>
+						<input type="search" name="search" id="search" placeholder="Поиск по сайту">
+						<button class="" type="submit" value="Найти" aria-label="Найти">Найти</button>
+					</form>	
 				</li>
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
@@ -173,18 +177,15 @@
 				<li>
 					<h3>Доставка</h3>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					<img src="img/delivery.png" width="136" height="164"  alt="Доставка">
 				</li>
 				<li>
 					<h3>Гарантия</h3>
 					<p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 					Товар, не дом, конечно же.</p>
-					<img src="img/warranty.png" width="171" height="194"  alt="Доставка">
 				</li>
 				<li>
 					<h3>Кредит</h3>
 					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-					<img src="img/credit.png" width="156" height="186"  alt="Доставка">
 				</li>
 			</ul>
 		</section>
@@ -268,15 +269,29 @@
 
 		<section class="modal modal-feedback">
 				<h2 class="visually-hidden">Обратная связь</h2>
-				<span class="modal-close">x</span>
-			<!--форма для обратной связи -->				
+				<form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
+					<p class="feedback-item">
+						<label for="feedback-name">Ваше имя:</label>
+						<input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+					</p>
+					<p class="feedback-item">
+						<label for="feedback-mail">Ваш e-mail:</label>
+						<input type="email" name="mail" id="feedback-mail" placeholder="email@example.com">
+					</p>
+					<p class="feedback-item">
+						<label for="feedback-area">Текст письма</label>
+						<input type="area" name="area" id="feedback-area" placeholder="В свободной форме">
+					</p>
+					<button type="submit" value="Отправить" aria-label="Отправить данные формы">Отправить</button>
+				</form>	
+				<button class="modal-close" value="Закрыть" aria-label="Закрыть форму обратной связи">Закрыть</button>
 		</section>
 
 		<section class="modal modal-maps">
 				<h2 class="visually-hidden">Мы на карте</h2>
-				<img src="img/map-big.jpg" width="560" height="593" alt="maps">
-				<span class="modal-close">x</span>
-							
+				<img src="img/map-big.jpg" width="994" height="593" alt="maps">
+				<button class="modal-close" value="Закрыть" aria-label="Закрыть карту">Закрыть</button>
+				
 		</section>
 	</body>
 </html>

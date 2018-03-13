@@ -28,7 +28,11 @@
 				</ul>
 				<ul class="user-navigation">
 					<li>
-						<!-- Форма поиска -->
+						<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+							<input type="search" name="search" id="search">
+							<label for="search" class="visually-hidden">Поиск</label>
+							<button type="submit" value="Найти" aria-label="Найти">Найти</button>
+						</form>	
 					</li>
 					<li><a href="#">Валентин Петухов</a></li>
 					<li><a href="#">Выйти</a></li>
@@ -46,7 +50,51 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<!-- Форма фильтра товаров-->
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+							<legend>Стоимость</legend>
+							0<input type="range" name="price" id="range-price" min="0" max="9000" step="1000">9000
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость</legend>
+						<ul>
+							<li class="filter-checkbox">
+								<input type="checkbox" name="black" id="filter-black" checked >
+								<label for="filter-black">черный</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="white" id="filter-white">
+								<label for="filter-white">белый</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="blue" id="filter-blue" checked>
+								<label for="filter-blue">синий</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="red" id="filter-red" checked>
+								<label for="filter-red">красный</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="pink" id="filter-pink">
+								<label for="filter-pink">розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+							<legend>Bluetooth</legend>
+							<ul>
+								<li class="filter-option">
+									<input type="radio" name="bluetooth" id="on" checked>
+									<label for="on">Есть</label>
+								</li>
+								<li class="filter-option">
+										<input type="radio" name="bluetooth" id="off">
+										<label for="off">Нет</label>
+								</li>
+							</ul>
+					</fieldset>
+					<button type="submit" value="Показать" aria-label="Применить фильтр">Применить</button>
+				</form>			
 			</section>
 
 			<section class="catalog">
