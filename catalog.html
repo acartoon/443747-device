@@ -8,7 +8,7 @@
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
-					<img src="#" width="0" height="0" alt="Логотип Девайс">
+					<img src="img/logo.png" width="163" height="36" alt="Логотип Девайс">
 				</a>
 				<ul class="site-navigation">
 					<li>
@@ -28,7 +28,7 @@
 				</ul>
 				<ul class="user-navigation">
 					<li>
-						<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+						<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 							<input type="search" name="search" id="search">
 							<label for="search" class="visually-hidden">Поиск</label>
 							<button type="submit" value="Найти" aria-label="Найти">Найти</button>
@@ -50,7 +50,7 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset>
 							<legend>Стоимость</legend>
 							0<input type="range" name="price" id="range-price" min="0" max="9000" step="1000">9000
@@ -59,24 +59,24 @@
 						<legend>Стоимость</legend>
 						<ul>
 							<li class="filter-checkbox">
-								<input type="checkbox" name="black" id="filter-black" checked >
 								<label for="filter-black">черный</label>
+								<input class="visually-hidden" type="checkbox" name="black" id="filter-black" checked >
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="white" id="filter-white">
 								<label for="filter-white">белый</label>
+								<input class="visually-hidden" type="checkbox" name="white" id="filter-white">
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="blue" id="filter-blue" checked>
 								<label for="filter-blue">синий</label>
+								<input class="visually-hidden" type="checkbox" name="blue" id="filter-blue" checked>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="red" id="filter-red" checked>
 								<label for="filter-red">красный</label>
+								<input class="visually-hidden" type="checkbox" name="red" id="filter-red" checked>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="pink" id="filter-pink">
 								<label for="filter-pink">розовый</label>
+								<input class="visually-hidden" type="checkbox" name="pink" id="filter-pink">
 							</li>
 						</ul>
 					</fieldset>
@@ -84,16 +84,16 @@
 							<legend>Bluetooth</legend>
 							<ul>
 								<li class="filter-option">
-									<input type="radio" name="bluetooth" id="on" checked>
+									<input class="visually-hidden" type="radio" name="bluetooth" id="on" checked>
 									<label for="on">Есть</label>
 								</li>
 								<li class="filter-option">
-										<input type="radio" name="bluetooth" id="off">
+										<input class="visually-hidden" type="radio" name="bluetooth" id="off">
 										<label for="off">Нет</label>
 								</li>
 							</ul>
 					</fieldset>
-					<button type="submit" value="Показать" aria-label="Применить фильтр">Применить</button>
+					<button type="submit" value="Показать" aria-label="Применить фильтр">Показать</button>
 				</form>			
 			</section>
 
@@ -153,7 +153,7 @@
 
 		<footer class="main-footer">
 			<div class="footer-left">
-				<img src="#" width="0" height="0" alt="Логотип Девайс">
+				<img src="img/logo_yellow.png" width="163" height="36" alt="Логотип Девайс">
 				<p>г.Москва, ул. Строителей, 15</p>
 			</div>
 
