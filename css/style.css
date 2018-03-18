@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'gilroylight';
     src: url(../fonts/gilroylight-webfont.woff2) format('woff2'),
-    src: url(../fonts/gilroyextrabold-webfont.woff2) format('woff2');
+         url(../fonts/gilroyextrabold-webfont.woff2) format('woff2');
 }
 
 body {
     margin: 0;
     padding: 0;
 
-    font-family: 'gilroylight', 'Open Sans', sans-serif;
+    font-family: 'gilroylight', Open Sans, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -27,6 +27,41 @@ a {
     background-color: #f7e296;
 }
 
+.main-navigation input {
+     background-color: transparent;
+     font: inherit;
+     
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.302);
+}
+
+input[type="search"]:hover::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+input[type="search"]:focus::-webkit-input-placeholder {
+    border-bottom: 2px solid #000000;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+
+button[type="submit"],
+input[type="search"]
+ {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 0;
+}
+input[type="search"]:focus ~ button[type="submit"] {
+    border: 2px solid #000000;
+}
+
+
+
+input[type="search"]
 .site-navigation,
 .user-navigation,
 .dropdown-menu  {
@@ -80,4 +115,24 @@ a {
 .main-footer {
     color: #ffffff;
     background-color: #464646;
+}
+.footer-navigation a {
+    color: #ffffff;
+}
+.footer-center {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-btn{
+  color: #ffffff;
+}
+.footer-left {
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
 }
