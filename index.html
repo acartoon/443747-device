@@ -219,6 +219,7 @@
 						<p class="categories-name">Квадрокоптеры</p>
 					</a>
 				</li>
+				
 			</ul>
 		</section>
 
@@ -367,19 +368,19 @@
 		<section class="modal modal-feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
 				<form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-					<p class="feedback-item">
+					<p class="feedback-item-name">
 						<label for="feedback-name">Ваше имя:</label>
 						<input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
 					</p>
-					<p class="feedback-item">
+					<p class="feedback-item-mail">
 						<label for="feedback-mail">Ваш e-mail:</label>
 						<input type="email" name="mail" id="feedback-mail" placeholder="email@example.com">
 					</p>
-					<p class="feedback-item">
+					<p class="feedback-item-area">
 						<label for="feedback-area">Текст письма:</label>
-						<textarea name="feedback-area" id="feedback-area" placeholder="В свободной форме"></textarea>
+						<textarea name="feedback-area" id="feedback-area" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
 					</p>
-					<button class="" type="submit" value="Отправить" aria-label="Отправить форму">Отправить</button>
+					<button class="modal-submit" type="submit" value="Отправить" aria-label="Отправить форму">Отправить</button>
 				</form>	
 				<button class="modal-close" type="button" value="Закрыть" aria-label="Закрыть форму обратной связи">Закрыть</button>
 		</section>

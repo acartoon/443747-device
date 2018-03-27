@@ -574,6 +574,10 @@ a.slide-btn:before {
     justify-content: space-between;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-content: center;
+    -ms-flex-line-pack: center;
 }
 
 .categories {
@@ -708,6 +712,8 @@ a.slide-btn:before {
     padding-top: 10px;
     padding-bottom: 7px;
     /* margin-bottom: 30px; */
+    Outline: none;
+
 }
 .services-btn:nth-child(2) {
     margin-top: 21px;
@@ -740,6 +746,12 @@ a.slide-btn:before {
 /*end services*/
 
 /*brands-link*/
+.brands {
+    margin-top: 93px;
+    margin-bottom: 137px;
+   
+}
+
 .brands-link {
     display: flex;
     display: -ms-flexbox;
@@ -750,6 +762,10 @@ a.slide-btn:before {
     -ms-flex-pack: justify;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-content: center;
+    -ms-flex-line-pack: center;
 
 }
 .brands-link img {
@@ -765,10 +781,7 @@ a.slide-btn:before {
     filter: grayscale(0%);
     opacity: 1;
 }
-.brands {
-    margin-top: 93px;
-    margin-bottom: 137px;
-}
+
 /*info*/
 
 .info {
@@ -1103,39 +1116,7 @@ a.footer-btn:focus {
 }
 /*end main-footer*/
 
-/*feedback-form*/
 
-
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-textarea {
-    background-color: #f2f2f2;
-    border: 1px solid transparent;
-    color: rgba(70, 70, 70, 0.4);
-    font-size: 14px;
-    line-height: 18px;
-    font-family: inherit;
-}
-.feedback-form input[type="text"]:hover,
-.feedback-form input[type="email"]:hover,
-textarea:hover {
-    background-color: #ebebeb;
-}
-.feedback-form input[type="text"]:focus,
-.feedback-form input[type="email"]:focus,
-textarea:focus {
-    outline: none;
-    background-color: #ffffff;
-    border: 2px solid #f7e296;
-    color: #464646;
-}
-.feedback-form input[type="text"]:invalid,
-.feedback-form input[type="email"]:invalid {
-    background-color: #f6dada;
-    outline: none;
-    border: 1px solid #f6dada;
-}
-/*end feedback-form*/
 
 /* catalog */
 
@@ -1502,7 +1483,6 @@ textarea:focus {
 .sorting {
     position: relative;
     display: flex;
-    display: -webkit-box;
     display: -ms-flexbox;
     justify-content: space-between;
     -webkit-box-pack: justify;
@@ -1591,7 +1571,6 @@ textarea:focus {
 }
 .catalog-list {
     display: flex;
-    display: -webkit-box;
     display: -ms-flexbox;
     justify-content: space-between;
     -webkit-box-pack: justify;
@@ -1748,7 +1727,6 @@ textarea:focus {
 }
 .pagination-list {
     display: flex;
-    display: -webkit-box;
     display: -ms-flexbox;
     justify-content: space-between;
     -webkit-box-pack: justify;
@@ -1815,10 +1793,7 @@ textarea:focus {
 .pagination-item .after:focus {
     opacity: 0.3;
 }
-.pagination-item:nth-child(2) {
-    margin-right: 30px;
-}
-.pagination-item:nth-child(3) {
+.pagination-item:not(:nth-last-child(2)) .page {
     margin-right: 30px;
 }
 .pagination-item .page {
@@ -1833,3 +1808,150 @@ textarea:focus {
 .pagination-item .active {
     opacity: 1;
 }
+.modal-feedback {
+    display: block;
+    width: 960px; 
+    /* position: fixed; */
+    top: 120px;
+    left: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+    margin-left: -480px;
+    box-sizing: border-box;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    z-index: 6;
+}
+.modal-feedback p {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.modal-feedback label {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-family: gilroyextrabold, Open Sans, sans-serif;
+    margin-bottom: 8px;
+    
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    background-color: #f7e296;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+}
+.modal-close::before,
+.modal-close:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    top: 25px;
+    left: 14px
+}
+.modal-close::before {
+    transform: rotate(45deg);
+  }
+  
+  .modal-close::after {
+    transform: rotate(-45deg);
+  }
+
+  /*feedback-form*/
+
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+textarea {
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    color: rgba(70, 70, 70, 0.4);
+    font-size: 14px;
+    line-height: 18px;
+    font-family: inherit;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+textarea:hover {
+    background-color: #ebebeb;
+}
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #f7e296;
+    color: #464646;
+}
+.feedback-form input[type="text"]:invalid,
+.feedback-form input[type="email"]:invalid {
+    background-color: #f6dada;
+    outline: none;
+    border: 1px solid #f6dada;
+}
+.feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 81px;
+    padding-bottom: 102px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.feedback-item-name,
+.feedback-item-mail {
+    padding: 0;
+    width: 360px;
+}
+p.feedback-item-area {
+    margin-top: 35px;
+    width: 100%;
+}
+.modal-submit {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding: 0;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    margin-top: 48px;
+}
+.modal-submit:before {
+    content: '';
+    position: absolute;
+    background-color: #f0c52e;
+    width: 200px;
+    height: 8px;
+    z-index: -1;
+    bottom: 8px;
+    left: 0;
+}
+.modal-submit:focus {
+    color: rgba(0, 0, 0, 0.302);
+ }
+ 
+ .modal-submit:hover:before {
+     height: 40px;
+     bottom: -8px;
+ }
+
+/*end feedback-form*/
