@@ -17,16 +17,19 @@
                             <input type="search" name="search" id="search" placeholder="Поиск по сайту">
                             <button class="" type="submit" value="Найти" aria-label="Кнопка най">Найти</button>
                         </form>
+					</li>
+                    <li class="user-navigation-item">
+							<a class="user" href="#">Валентин Петухов</a>
+						</li>
+						<li class="user-navigation-item">
+                        <a class="login-out" href="#">Выйти</a>
                     </li>
                     <li class="user-navigation-item">
-                        <a href="#">Войти</a>
-                    </li>
+							<a class="compare" href="#">Сравнить</a>
+						</li>
                     <li class="user-navigation-item">
-                        <a href="#">Сравнить</a>
-                    </li>
-                    <li class="user-navigation-item">
-                        <a href="#">Корзина</a>
-                    </li>
+							<a class="cart" href="#">Корзина</a>
+						</li>
                 </ul>
                 <ul class="site-navigation">
                     <li class="site-navigation-item">
@@ -69,13 +72,13 @@
 				<h1 class="visually-hidden">Каталог товаров</h1>
 				<h2 class="headline">Моноподы для селфи</h2>
 				<ul class="breadcrumbs">
-					<li>
+					<li class="breadcrumbs-item">
 						<a href="#">Главная</a>
 					</li>
-					<li>
+					<li class="breadcrumbs-item">
 						<a href="#">Каталог товаров</a>
 					</li>
-					<li>
+					<li class="breadcrumbs-item">
 						<a href="#">Моноподы для селфи</a>
 					</li>
 				</ul>
@@ -144,21 +147,36 @@
 			<section class="catalog-product">
 				<h2 class="visually-hidden">Каталог товаров</h2>
 				<ul class="sorting">
-					<li>Сортировка:</li>
-					<li>
-						<a href="#">По цене</a>
+					<li class="sorting-item">Сортировка:</li>
+					<li class="sorting-item">
+						<a class="active" href="#">По цене</a>
 					</li>
-					<li>
+					<li class="sorting-item">
 						<a href="#">По типу</a>
 					</li>
-					<li>
+					<li class="sorting-item">
 						<a href="#">По популярности</a>
 					</li>
+					<li class="sorting-item">
+							<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+							</a>
+						</li>
+					<li class="sorting-item">
+							<a class="active" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+							</a>
+					</li>	
 				</ul>
 				<ul class="catalog-list">
 					<li>
 						<figure class="catalog-image">
 							<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+							<div class="catalog-buy">
+								<a class="buy-btn" href="#">В корзину</a>
+								<button class="compare-btn" type="button">Добавить к сравнению</button>
+							</div>
+	
 						</figure>
 						<div class="catalog-desctiption">
 							<a href="#">
@@ -171,10 +189,15 @@
 					<li>
 						<figure class="catalog-image">
 							<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+							<div class="catalog-buy">
+								<a class="buy-btn" href="#">В корзину</a>
+								<button class="compare-btn" type="button">Добавить к сравнению</button>
+							</div>
 						</figure>
+
 						<div class="catalog-desctiption">
 							<a href="#">
-								<h3>Профессиональная<br> селфи-палка</h3>
+								<h3>Профессиональная селфи-палка</h3>
 							</a>
 							<p>1 500 руб.</p>
 						</div>
@@ -182,6 +205,10 @@
 					<li>
 						<figure class="catalog-image">
 							<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+							<div class="catalog-buy">
+								<a class="buy-btn" href="#">В корзину</a>
+								<button class="compare-btn" type="button">Добавить к сравнению</button>
+							</div>
 						</figure>
 						<div class="catalog-desctiption">
 							<a href="#">
@@ -194,6 +221,11 @@
 					<li>
 						<figure class="catalog-image">
 							<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+							<div class="catalog-buy">
+									<a class="buy-btn" href="#">В корзину</a>
+									<button class="compare-btn" type="button">Добавить к сравнению</button>
+								</div>
+							<div class="catalog-new"></div>
 						</figure>
 						<div class="catalog-desctiption">
 							<a href="#">
@@ -203,6 +235,7 @@
 						</div>
 						<!-- <span class="catalog-label">New</span> -->
 					</li>
+	
 				</ul>
 					<ul class="pagination-list">
 						<li class="pagination-item">
@@ -212,10 +245,10 @@
 							<a href="#">1</a>
 						</li>
 						<li class="pagination-item">
-							<a href="#">2</a>
+							<a class="inactive" href="#">2</a>
 						</li>
 						<li class="pagination-item">
-							<a href="#">3</a>
+							<a class="inactive" href="#">3</a>
 						</li>
 						<li class="pagination-item">
 							<a href="#">Вперед</a>
