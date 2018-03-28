@@ -261,8 +261,8 @@ a.login-out {
 }
 .logo {
     position: absolute;
-    top: -20px;
-    left: 50px;
+    top: -19px;
+    left: 60px;
 }
 .main-navigation input {
      background-color: transparent;
@@ -1839,19 +1839,22 @@ a.login-out {
 .pagination-item .active {
     opacity: 1;
 }
-.modal-feedback {
+.modal {
     display: none;
     width: 960px; 
     position: fixed;
     top: 120px;
     left: 50%;
-    background-color: #ffffff;
     box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
     margin-left: -480px;
+    z-index: 6;
+    
+}
+.modal-feedback {
+    background-color: #ffffff;
     box-sizing: border-box;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
-    z-index: 6;
 }
 .modal-feedback p {
     padding: 0;
@@ -1867,34 +1870,22 @@ a.login-out {
     margin-bottom: 8px;
     
 }
+
 .modal-close {
+    padding: 0;
+    margin: 0;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 22px;
+    right: 22px;
     width: 55px;
     height: 55px;
-    background-color: #f7e296;
+    background-image: url(../img/modal-close.svg);
+    opacity: 0.5;
+    font-size: 0px;
     border: none;
-    border-radius: 50%;
-    font-size: 0;
+    background-color: transparent;
+
 }
-.modal-close::before,
-.modal-close:after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    top: 25px;
-    left: 14px
-}
-.modal-close::before {
-    transform: rotate(45deg);
-  }
-  
-  .modal-close::after {
-    transform: rotate(-45deg);
-  }
 
   /*feedback-form*/
 
