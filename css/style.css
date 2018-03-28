@@ -264,6 +264,12 @@ a.login-out {
     top: -19px;
     left: 60px;
 }
+.logo:hover {
+    opacity: 0.6;
+}
+.logo:focus {
+    opacity: 0.3;
+}
 .main-navigation input {
      background-color: transparent;
      font: inherit;
@@ -1145,6 +1151,12 @@ a.login-out {
     background-image: url(../img/logo-html.png);
     right: 0px;
 }
+.footer-copyright a:hover:before {
+    opacity: 0.6;
+}
+.footer-copyright a:focus:before {
+    opacity: 0.3;
+}
 /*end main-footer*/
 
 
@@ -1886,7 +1898,12 @@ a.login-out {
     background-color: transparent;
 
 }
-
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-close:focus {
+    opacity: 0.3;
+}
   /*feedback-form*/
 
 
