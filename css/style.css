@@ -142,7 +142,10 @@ a {
 .dropdown-menu li {
     padding: 0;
     display: block;
-    width: 200px;
+    /* width: 200px; */
+}
+.column-one {
+    padding-right: 30px;
 }
 .dropdown-menu li:nth-last-child(2) {
     margin-bottom: 40px;
@@ -1422,6 +1425,7 @@ a.login-out {
     background-image: url(../img/checkbox-off.svg);
     background-size: 23px auto;
     background-repeat: no-repeat;
+    
 }
 .filter-input-checkbox:checked:hover + label:before {
     opacity: 0.6;
@@ -1434,8 +1438,8 @@ a.login-out {
 }
 .filter-input-checkbox:focus + label:before {
     opacity: 1;
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    /* outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color; */
 }
 .filter-input-checkbox:checked + label:before {
     content: "";
@@ -1622,6 +1626,7 @@ a.login-out {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
+    padding-top: 24px;
     padding-left: 72px;
     margin: 0;
     list-style: none;
@@ -1635,10 +1640,6 @@ a.login-out {
     /* padding-bottom: 36px; */
    
 }
-.catalog-list li:first-child,
-.catalog-list li:nth-child(2) {
-    padding-top: 70px;
-}
 .catalog-list h3 {
     padding: 0;
     margin: 0;
@@ -1647,11 +1648,15 @@ a.login-out {
     width: 255px;
 }
 .catalog-image {
+    width: 360px;
     height: 380px;
     padding: 0;
     margin: 0;
     position: relative;
     cursor: pointer;
+}
+.catalog-image img {
+    max-width: 100%
 }
 .catalog-buy {
     position: absolute;
