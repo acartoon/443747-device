@@ -1,26 +1,33 @@
 @font-face {
-    font-family: 'gilroylight';
-    src: url(../fonts/gilroylight-webfont.woff2) format('woff2'),
-         url(../fonts/gilroyextrabold-webfont.woff2) format('woff2');
+    font-family: "gilroylight";
+    src: url(../fonts/gilroylight-webfont.woff2);
+    font-style: normal;
+    
 }
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url(../fonts/gilroyextrabold-webfont.woff2) format('woff2');
+    font-family: "gilroyextrabold";
+    src: url(../fonts/gilroyextrabold-webfont.woff2);
+    font-style: normal;
+    
 }
 @font-face {
-    font-family: 'opensans';
+    font-family: "opensans";
     src: url(../fonts/opensans.woff2) format('woff2');
+    font-style: normal;
+    
 }
 @font-face {
-    font-family: 'opensans-light';
+    font-family: "opensans-light";
     src: url(../fonts/opensans-light.woff2) format('woff2');
+    font-style: normal;
+    
 }
 body {
     margin: 0;
     padding: 0;
     /* min-width: 1160px; */
     
-    font-family: 'gilroylight', Open Sans, sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -29,7 +36,8 @@ body {
 }
 .container {
     width: 1160px;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
 }
 
@@ -72,7 +80,7 @@ a {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     padding: 0 60px;
     padding-bottom: 51px;
     list-style: none;
@@ -130,22 +138,21 @@ a {
     -ms-flex-align: start;
 }
 .dropdown-menu {
-    -webkit-column-count:3;  
-    -moz-column-count:3;  
-    column-count: 3;  
-    -moz-column-width: 200px;  
-    -webkit-column-width: 200px;   
-    column-width: 200px; 
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -moz-column-width: 200px;
+    -webkit-column-width: 200px;
+    column-width: 200px;
     column-fill: balance;
-    -webkit-column-gap: 30px;  
-    -moz-column-gap: 30px;  
-    column-gap: 0px;  
-    
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 0px;
 }
 .dropdown-menu li {
     padding: 0;
     display: block;
-    /* width: 200px; */
+    /* min-width: 200px; */
 }
 .column-one {
     padding-right: 30px;
@@ -181,7 +188,7 @@ a {
 }
 
 .user-navigation {
-    font-family: opensans, Open Sans, sans-serif;
+    font-family: opensans, Arial, sans-serif;
     display: flex;
     display: -ms-flexbox;
     justify-content: space-between;
@@ -310,6 +317,7 @@ input[type="search"]
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 36px;
+    min-height: 30px;
 }
 .main-navigation label::after {
     position: absolute;
@@ -389,7 +397,7 @@ input[type="search"]:focus ~ button[type="submit"] {
      font-size: 179.2px;
      line-height: 179.2px;
      color: #ffffff;
-     font-family: gilroyextrabold, Open Sans, sans-serif;
+     font-family: gilroyextrabold, Arial, sans-serif;
      position: absolute;
      right: 45px;
      top: -11px;
@@ -402,7 +410,7 @@ a.slide-btn {
     width: 220px;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -433,7 +441,8 @@ a.slide-btn:before {
     padding-top: 81px;
     padding-bottom: 19px;
     margin: 0;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-weight: 800;
     font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.01em;
@@ -488,13 +497,13 @@ a.slide-btn:before {
     line-height: 48px;
     letter-spacing: 0.01em;
     color: #000000;
-    font-family: gilroylight, Open Sans, sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     padding-bottom: 8px;
 }
 .parameter {
     font-size: 13px;
     line-height: 20px;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     letter-spacing: 0.01em;
     color: #464646;
 }
@@ -547,7 +556,7 @@ a.slide-btn:before {
     width: 560px;
 }
 .slider {
-    margin-top: -110px;
+    margin-top: -112px;
     padding-bottom: 107px;
     position: relative;
     /*background-image: linear-gradient(#f7e296 19%, #ffffff 19%);*/
@@ -560,7 +569,7 @@ a.slide-btn:before {
 .categories-name {
     font-size: 18px;
     line-height: 24px;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     color: #000000;
     letter-spacing: 0.01em;
 }
@@ -665,7 +674,7 @@ a.slide-btn:before {
   background-position: 656px 63px;
 }
 .services-slider h3 {
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
     padding: 0;
@@ -674,7 +683,7 @@ a.slide-btn:before {
     letter-spacing: 0.01em;
 }
 .services-slider p {
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     width: 460px;
     font-size: 15px;
     line-height: 30px;
@@ -694,15 +703,6 @@ a.slide-btn:before {
     border-left: 7px solid #000000;
 
 }
-/* .services-slider:before {
-    position: absolute;
-    top: 7px;
-    display: inline-block;
-    content: "";
-    width: 7px;
-    height: 319px;
-    background-color: #000000;
-} */
 .services-list { 
     /* background-image: linear-gradient(#ffffff 26%, #e5e5e5 26%); */
     padding-bottom: 72px;
@@ -723,7 +723,7 @@ a.slide-btn:before {
 
 .services-btn {
     position: relative;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     width: 160px;
     font-size: 18px;
     text-transform: uppercase;
@@ -823,7 +823,7 @@ a.info-btn{
     width: 260px;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -855,7 +855,7 @@ a.info-btn{
     padding: 0;
     font-size: 47px;
     line-height: 48px;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     position: relative;
     letter-spacing: 0.01em;
     padding-bottom: 11px;
@@ -866,6 +866,7 @@ a.info-btn{
     position: absolute;
     top: -55px;
     display: inline-block;
+    vertical-align: baseline;
     content: "";
     width: 80px;
     height: 7px;
@@ -878,7 +879,7 @@ a.info-btn{
 .about p {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     padding-top: 31px;
 }
 .about .info-btn {
@@ -888,7 +889,7 @@ a.info-btn{
     padding:0;
     margin: 0;
     list-style: none;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
     padding-top: 64px;
@@ -909,7 +910,6 @@ a.info-btn{
     height: 6px;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
-    display: inline-block;
     padding: 0;
 }
 .contacts h2 {
@@ -918,7 +918,7 @@ a.info-btn{
     padding: 0;
     font-size: 47px;
     line-height: 48px;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     position: relative;
     letter-spacing: 0.01em;
     padding-bottom: 45px;
@@ -927,7 +927,7 @@ a.info-btn{
 .contacts p {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
 
 }
 .contacts img {
@@ -985,7 +985,7 @@ a.info-btn:before {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     list-style: none;
     margin: 0;
     letter-spacing: 0.2em;
@@ -1006,7 +1006,7 @@ a.info-btn:before {
 .footer-adress {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     
 }
 .footer-navigation a {
@@ -1066,7 +1066,7 @@ a.footer-social-item:focus {
     justify-content: flex-end;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
 }
 .menu-item {
     padding-right: 37px;
@@ -1127,7 +1127,7 @@ a.login-out {
 }
 
 .phone {
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -1184,7 +1184,7 @@ a.login-out {
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.01em;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
 }
 .breadcrumbs {
     padding: 0;
@@ -1197,7 +1197,7 @@ a.login-out {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
 }
 .breadcrumbs .breadcrumbs-item {
     padding-right: 41px;
@@ -1259,7 +1259,7 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     text-transform: uppercase;
     background-color: #dcdcdc;
     box-shadow: -265px 0 0 0px #dcdcdc;
@@ -1350,8 +1350,7 @@ a.login-out {
     padding: 0;
 }
   .price-controls label {
-    display: inline-block;
-
+    display: block;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
@@ -1398,7 +1397,7 @@ a.login-out {
     position: relative;
     font-size: 18px;
     line-height: 24px;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     
 }
 .filters legend:before {
@@ -1415,7 +1414,7 @@ a.login-out {
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     padding-left: 39px;
 }
 
@@ -1424,7 +1423,7 @@ a.login-out {
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     padding-left: 39px;
 }
 
@@ -1503,11 +1502,12 @@ a.login-out {
 .filter-btn {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 200px;
     padding: 0;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -1556,7 +1556,7 @@ a.login-out {
     align-items: baseline;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
-    font-family: opensans, Open Sans, sans-serif;
+    font-family: opensans, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     box-shadow: 830px 0 0 0px #ebebeb;
@@ -1570,6 +1570,7 @@ a.login-out {
 }
 .sorting-type-item {
     display: inline-block;
+    vertical-align: baseline;
     font-size: 14px;
 }
 .sorting-type-item a {
@@ -1616,7 +1617,7 @@ a.login-out {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2em;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     text-transform: uppercase;
     width: 200px;
     
@@ -1628,6 +1629,7 @@ a.login-out {
 }
 .sorting-caret li{
     display: inline-block;
+    vertical-align: baseline;
 }
 .catalog-list {
     display: flex;
@@ -1694,11 +1696,12 @@ a.login-out {
 .buy-btn {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 200px;
     padding: 0;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -1729,13 +1732,14 @@ a.login-out {
     margin: 0;
     margin-top: 5px;
     display: inline-block;
+    vertical-align: middle;
     font-size: 13px;
     line-height: 36px;
     letter-spacing: 0.01em;
     color: rgba(0, 0, 0, 0.5);
     border: none;
     background-color: transparent;
-    font-family: opensans-light, Open Sans, sans-serif;
+    font-family: opensans-light, Arial, sans-serif;
     cursor: pointer;
 }
 .compare-btn:hover {
@@ -1778,7 +1782,7 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     
 }
 .price {
@@ -1787,7 +1791,7 @@ a.login-out {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    font-family: gilroylight, Open Sans, sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     color: #464646;
     width: 90px;
     text-align: right;
@@ -1821,7 +1825,7 @@ a.login-out {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 
@@ -1902,7 +1906,7 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     margin-bottom: 8px;
     
 }
@@ -1984,6 +1988,7 @@ p.feedback-item-area {
 .modal-submit {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 200px;
     padding: 0;
     color: #000000;
