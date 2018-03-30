@@ -720,13 +720,13 @@ input[type="search"]:focus ~ button[type="submit"] {
 	padding-left: 0;
  }
 .brands-link img {
-	filter: gray;
-	moz-filter: grayscale(100%);
-	ms-filter: grayscale(100%);
+    filter: gray;
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
     o-filter: grayscale(100%);
-    webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-	opacity: 0.2;
+    opacity: 0.2;
  }
 .brands-link img:hover {
 	filter: grayscale(0%);
@@ -1011,7 +1011,17 @@ a.login-out {
 	padding: 0;
  }
 .footer-bottom {
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 60px;
+    position: relative;
     -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    
+    /* -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     display: -webkit-box;
@@ -1021,7 +1031,7 @@ a.login-out {
     -ms-flex-pack: center;
     justify-content: center;
 	padding-top: 60px;
-	position: relative;
+	position: relative; */
  }
 .footer-bottom:before {
 	background-color: #ffc600;
