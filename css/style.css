@@ -1,25 +1,29 @@
 @font-face {
-    font-family: "gilroylight";
-    src: url(../fonts/gilroylight.woff2);
+    font-family: "Gilroy";
+    src: url(../fonts/gilroylight.woff2),
+        url(../fonts/gilroylight.woff);
     font-style: normal;
     font-weight: 300;
 }
 @font-face {
-    font-family: "gilroyextrabold";
-    src: url(../fonts/gilroyextrabold.woff2);
+    font-family: "Gilroy";
+    src: url(../fonts/gilroyextrabold.woff2),
+        url(../fonts/gilroyextrabold.wof);
     font-style: normal;
     font-weight: 800;
 }
 @font-face {
-    font-family: "opensans";
-    src: url(../fonts/opensans.woff2) format('woff2');
+    font-family: "Opensans";
+    src: url(../fonts/opensans.woff2) format('woff2'),
+        url(../fonts/opensans.woff2) format('woff');
     font-style: normal;
     font-weight: 400;
    
 }
 @font-face {
-    font-family: "opensans-light";
-    src: url(../fonts/opensanslight.woff2) format('woff2');
+    font-family: "Opensans";
+    src: url(../fonts/opensanslight.woff2) format('woff2'),
+        url(../fonts/opensanslight.woff2) format('woff');
     font-style: normal;
     font-weight: 300;
 }
@@ -28,7 +32,8 @@ body {
     padding: 0;
     /* min-width: 1160px; */
     
-    font-family: gilroylight, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -81,7 +86,8 @@ a {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     padding: 0 60px;
     padding-bottom: 51px;
     list-style: none;
@@ -115,18 +121,13 @@ a {
     display: none;
     list-style: none;
     text-transform: none;
-    font-family: 'gilroylight', Open Sans, sans-serif;
+    font-family: Gilroy, Open Sans, sans-serif;
+    font-weight: 300;
     width: 1160px;
-    justify-content: flex-start;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding: 0;
     padding-top: 23px;
     padding-left: 60px;
-    padding-right: 450px;
+    padding-right: 23px;
     padding-bottom: 32px;
     background-color: #f7e296;
     min-height: 164px;
@@ -134,11 +135,19 @@ a {
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
-    align-items: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
 }
-.dropdown-menu {
+
+.dropdown-menu-item {
+    padding: 0;
+    padding-right: 40px;
+}
+.dropdown-menu-item:first-child li{
+    width: 200px;
+}
+.dropdown-menu-item:nth-child(2) li{
+    width: 160px;
+}
+/* .dropdown-menu {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -149,7 +158,7 @@ a {
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 0px;
-}
+} */
 .dropdown-menu li {
     padding: 0;
     display: block;
@@ -157,9 +166,6 @@ a {
 }
 .column-one {
     padding-right: 30px;
-}
-.dropdown-menu li:nth-last-child(2) {
-    margin-bottom: 40px;
 }
 
 .site-navigation-item:first-child > a {
@@ -173,7 +179,8 @@ a {
     opacity: 0.3;
 }
 .site-navigation-item:hover .dropdown-menu {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
 }
 .site-navigation-item:first-child > a::after {
     position: absolute;
@@ -398,7 +405,8 @@ input[type="search"]:focus ~ button[type="submit"] {
      font-size: 179.2px;
      line-height: 179.2px;
      color: #ffffff;
-     font-family: gilroyextrabold, Arial, sans-serif;
+     font-family: Gilroy, Arial, sans-serif;
+     font-weight: 800;
      position: absolute;
      right: 45px;
      top: -11px;
@@ -429,11 +437,12 @@ input[type="search"]:focus ~ button[type="submit"] {
     padding-top: 81px;
     padding-bottom: 19px;
     margin: 0;
-    font-family: "gilroyextrabold", Arial, sans-serif;
-    font-weight: 800;
+     font-family: Gilroy, Arial, sans-serif;
+     font-weight: 800;
     font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.01em;
+    min-height: 110px;
 }
 .slide-title::before {
     position: absolute;
@@ -448,7 +457,11 @@ input[type="search"]:focus ~ button[type="submit"] {
     margin: 0;
     padding: 0;
     padding-bottom: 48px;
-
+    max-width: 480px; 
+}
+.slider-item:nth-child(2) .slide-description,
+.slider-item:nth-child(3) .slide-description {
+    width: 460px;
 }
 .radio-item {
     display: inline-block;
@@ -464,6 +477,7 @@ input[type="search"]:focus ~ button[type="submit"] {
     background-position: center;
     outline: none;
     margin-right: 21px;
+    cursor: pointer;
 }
 
 .radio-item.active {
@@ -485,7 +499,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     line-height: 48px;
     letter-spacing: 0.01em;
     color: #000000;
-    font-family: gilroylight, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+    font-weight: 300;
     padding-bottom: 8px;
 }
 .parameter {
@@ -501,7 +516,7 @@ input[type="search"]:focus ~ button[type="submit"] {
     
 
 }
-.slider-list .slider-item:nth-child(1) {
+.slider-list .slider-item:nth-child(2) {
         display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -557,7 +572,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 .categories-name {
     font-size: 18px;
     line-height: 24px;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     color: #000000;
     letter-spacing: 0.01em;
 }
@@ -601,6 +617,7 @@ input[type="search"]:focus ~ button[type="submit"] {
     align-content: center;
     -ms-flex-line-pack: center;
 }
+
 .categories-link img {
     margin-top: auto;   
     margin-bottom: auto;    
@@ -619,11 +636,9 @@ input[type="search"]:focus ~ button[type="submit"] {
 .categories-name {
     padding: 0;
     margin: 0;
+    width: 160px;
 }
-.categories-name {
-    padding: 0;
-    margin: 0;
-}
+
 /*end catalog-categories*/
 
 /*services-list*/
@@ -662,7 +677,8 @@ input[type="search"]:focus ~ button[type="submit"] {
   background-position: 656px 63px;
 }
 .services-slider h3 {
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     font-size: 47px;
     line-height: 48px;
     padding: 0;
@@ -711,7 +727,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 
 .services-btn {
     position: relative;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     width: 160px;
     font-size: 18px;
     text-transform: uppercase;
@@ -726,8 +743,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     padding-top: 10px;
     padding-bottom: 7px;
     /* margin-bottom: 30px; */
-    Outline: none;
-
+    outline: none;
+    cursor: pointer;
 }
 .services-btn:nth-child(2) {
     margin-top: 21px;
@@ -822,7 +839,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     padding: 0;
     font-size: 47px;
     line-height: 48px;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;   
     position: relative;
     letter-spacing: 0.01em;
     padding-bottom: 11px;
@@ -856,7 +874,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     padding:0;
     margin: 0;
     list-style: none;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     font-size: 16px;
     line-height: 40px;
     padding-top: 64px;
@@ -885,7 +904,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     padding: 0;
     font-size: 47px;
     line-height: 48px;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     position: relative;
     letter-spacing: 0.01em;
     padding-bottom: 45px;
@@ -945,7 +965,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     list-style: none;
     margin: 0;
     letter-spacing: 0.2em;
@@ -1144,7 +1165,8 @@ a.login-out {
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.01em;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
 }
 .breadcrumbs {
     padding: 0;
@@ -1219,7 +1241,8 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
     background-color: #dcdcdc;
     box-shadow: -265px 0 0 0px #dcdcdc;
@@ -1357,8 +1380,8 @@ a.login-out {
     position: relative;
     font-size: 18px;
     line-height: 24px;
-    font-family: gilroyextrabold, Arial, sans-serif;
-    
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
 }
 .filters legend:before {
     content: "";
@@ -1568,7 +1591,8 @@ a.login-out {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2em;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
     width: 200px;
     
