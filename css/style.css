@@ -8,7 +8,7 @@
 @font-face {
     font-family: "Gilroy";
     src: url(../fonts/gilroyextrabold.woff2),
-        url(../fonts/gilroyextrabold.wof);
+         url(../fonts/gilroyextrabold.woff);
     font-style: normal;
     font-weight: 800;
 }
@@ -121,7 +121,7 @@ a {
     display: none;
     list-style: none;
     text-transform: none;
-    font-family: Gilroy, Open Sans, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
     font-weight: 300;
     width: 1160px;
     padding: 0;
@@ -196,7 +196,8 @@ a {
 }
 
 .user-navigation {
-    font-family: opensans, Arial, sans-serif;
+    font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     display: flex;
     display: -ms-flexbox;
     justify-content: space-between;
@@ -506,7 +507,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 .parameter {
     font-size: 13px;
     line-height: 20px;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     letter-spacing: 0.01em;
     color: #464646;
 }
@@ -687,7 +689,8 @@ input[type="search"]:focus ~ button[type="submit"] {
     letter-spacing: 0.01em;
 }
 .services-slider p {
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     width: 460px;
     font-size: 15px;
     line-height: 30px;
@@ -864,7 +867,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 .about p {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     padding-top: 31px;
 }
 .about .info-btn {
@@ -914,8 +918,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 .contacts p {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Arial, sans-serif;
-
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
 }
 .contacts img {
     padding-top: 40px;
@@ -987,8 +991,8 @@ input[type="search"]:focus ~ button[type="submit"] {
 .footer-adress {
     padding: 0;
     margin: 0;
-    font-family: opensans-light, Arial, sans-serif;
-    
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
 }
 .footer-navigation a {
     color: #ffffff;
@@ -1047,7 +1051,8 @@ a.footer-social-item:focus {
     justify-content: flex-end;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
 }
 .menu-item {
     padding-right: 37px;
@@ -1108,7 +1113,8 @@ a.login-out {
 }
 
 .phone {
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     padding: 0;
     margin: 0;
 }
@@ -1179,7 +1185,8 @@ a.login-out {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
 }
 .breadcrumbs .breadcrumbs-item {
     padding-right: 41px;
@@ -1322,7 +1329,7 @@ a.login-out {
   .price-controls {
     font-size: 0;
     display: flex;
-    isplay: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
   }
 .min-price {
@@ -1397,7 +1404,8 @@ a.login-out {
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     padding-left: 39px;
 }
 
@@ -1406,7 +1414,8 @@ a.login-out {
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     padding-left: 39px;
 }
 
@@ -1530,7 +1539,8 @@ a.login-out {
     align-items: baseline;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
-    font-family: opensans, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     font-size: 14px;
     line-height: 18px;
     box-shadow: 830px 0 0 0px #ebebeb;
@@ -1704,7 +1714,8 @@ a.login-out {
     color: rgba(0, 0, 0, 0.5);
     border: none;
     background-color: transparent;
-    font-family: opensans-light, Arial, sans-serif;
+	font-family: Opensans, Arial, sans-serif;
+    font-weight: 300;
     cursor: pointer;
 }
 .compare-btn:hover {
@@ -1747,8 +1758,8 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Arial, sans-serif;
-    
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
 }
 .price {
     display: block;
@@ -1790,7 +1801,8 @@ a.login-out {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 
@@ -1871,7 +1883,8 @@ a.login-out {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     margin-bottom: 8px;
     
 }
@@ -1958,7 +1971,8 @@ p.feedback-item-area {
     padding: 0;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Open Sans, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -1992,7 +2006,8 @@ p.feedback-item-area {
     vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
-    font-family: gilroyextrabold, Arial, sans-serif;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
