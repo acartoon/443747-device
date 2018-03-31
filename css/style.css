@@ -634,11 +634,11 @@ input[type="search"]:focus ~ button[type="submit"] {
 	flex-grow: 1;
 	margin: 0;
 	margin-top: -100px;
-	ms-flex-positive: 1;
+	-ms-flex-positive: 1;
 	padding: 0;
 	padding-bottom: 32px;
 	position: relative;
-	webkit-box-flex: 1;
+	-webkit-box-flex: 1;
  }
 .services-list {
 	background-color: #e5e5e5;
@@ -723,7 +723,7 @@ input[type="search"]:focus ~ button[type="submit"] {
     filter: gray;
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    o-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.2;
