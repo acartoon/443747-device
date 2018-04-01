@@ -289,7 +289,8 @@ input[type="search"] {
 	padding-bottom: 10px;
 	padding-left: 36px;
 	padding-top: 10px;
- }
+	vertical-align: baseline;
+}
 .main-navigation label::after {
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
@@ -300,6 +301,7 @@ input[type="search"] {
 	left: 3px;
 	position: absolute;
 	top: 18px;
+	vertical-align: top;
 	width: 18px;
  }
 .user-navigation button[type="submit"] {
@@ -318,6 +320,7 @@ input[type="search"] {
 	padding-top: 10px;
  }
 .user-navigation button[type="submit"]:hover {
+	vertical-align: top;
 	background-color: #000000;
 	color: #ffffff;
 	display: inline-block;
@@ -327,10 +330,12 @@ input[type="search"] {
 	color: rgba(255, 255, 255, 0.302);
 	display: inline-block;
 	outline: none;
+	vertical-align: top;
  }
 input[type="search"]:focus ~ button[type="submit"] {
 	border: 2px solid #000000;
 	display: inline-block;
+	vertical-align: top;
  }
 .user-navigation form {
 	position: relative;
@@ -400,6 +405,7 @@ input[type="search"]:focus ~ button[type="submit"] {
 	height: 7px;
 	position: absolute;
 	top: 37px;
+	vertical-align: top;
 	width: 100px;
  }
 .slide-description {
@@ -426,6 +432,7 @@ input[type="search"]:focus ~ button[type="submit"] {
 	outline: none;
 	padding: 0;
 	position: relative;
+	baseline
 	width: 12px;
  }
 .radio-item.active {
@@ -590,9 +597,9 @@ input[type="search"]:focus ~ button[type="submit"] {
  }
 .services-slider-item {
 	display: none;
-	padding-bottom: 40px;
+	padding-bottom: 44px;
 	padding-left: 117px;
-	padding-top: 74px;
+	padding-top: 70px;
  }
 .services-slider-item:first-child {
 	display: block;
@@ -1851,6 +1858,7 @@ p.feedback-item-area {
 	height: 40px;
  }
 .btn {
+	align-items: middle;
 	color: #000000;
 	display: inline-block;
 	font-family: Gilroy, Arial, sans-serif;
@@ -1883,4 +1891,4 @@ p.feedback-item-area {
  }
 .btn:not(.active):focus {
 	color: rgba(0, 0, 0, 0.302);
- }
+}
